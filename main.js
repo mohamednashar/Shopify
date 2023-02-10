@@ -20,9 +20,11 @@ window.onclick = function (event) {
 }
 
 
-// Progress Bar
+// Progress Bar (You must click 2 clicks to move)
 
 let text_1 = document.getElementById("text-1");
+let text_2 = document.getElementById("text-2");
+let text_3 = document.getElementById("text-3");
 
 
 text_1.addEventListener("click", (eo) => {
@@ -33,98 +35,82 @@ text_1.addEventListener("click", (eo) => {
     progressBar.style.setProperty('--width', width + .1)
   }, 5)
 
+}
+)
+text_2.addEventListener("click", (eo) => {
+  const progressBar = document.getElementsByClassName('progress-bar')[1]
+  setInterval(() => {
+    const computedStyle = getComputedStyle(progressBar)
+    const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+    progressBar.style.setProperty('--width', width + .1)
+  }, 5)
+}
+)
 
+text_3.addEventListener("click", (eo) => {
+  const progressBar = document.getElementsByClassName('progress-bar')[2]
+  setInterval(() => {
+    const computedStyle = getComputedStyle(progressBar)
+    const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+    progressBar.style.setProperty('--width', width + .1)
+  }, 5)
 }
 )
 
 
-'use strict';
-
-// Incrementing Numbers
-function Inc(obj) {
-  var elem = obj.elem;
-  var input = (elem.nodeName.toLowerCase() === 'input') ? true : false;
-  var value = parseFloat(elem.getAttribute('data-inc-value')) || 0;
-  var duration = parseInt(elem.getAttribute('data-inc-duration')) || 0;
-  var delay = parseInt(elem.getAttribute('data-inc-delay')) || 0;
-  var decimal = ((obj.decimal > 2) ? 2 : obj.decimal) || 0;
-  var currency = obj.currency || '';
-  var speed = ((obj.speed < 30) ? 30 : obj.speed) || 30;
-  var count = 0;
-  var increment = value / (duration / speed);
-  var interval = null;
-  var regex = /\B(?=(\d{3})+(?!\d))/g;
-  var run = function () {
-    count += increment;
-    if (count < value) {
-      (input) ? elem.value = currency + (count).toFixed(decimal).toString().replace(regex, ',') : elem.innerHTML = currency + (count).toFixed(decimal).toString().replace(regex, ',');
-    } else {
-      clearInterval(interval);
-      (input) ? elem.value = currency + (value).toFixed(decimal).toString().replace(regex, ',') : elem.innerHTML = currency + (value).toFixed(decimal).toString().replace(regex, ',');
-    }
-  };
-  setTimeout(function () {
-    interval = setInterval(run.bind(this), speed);
-  }.bind(this), delay);
-  this.reset = function () {
-    clearInterval(interval);
-    value = parseFloat(elem.getAttribute('data-inc-value')) || 0;
-    duration = parseInt(elem.getAttribute('data-inc-duration')) || 0;
-    increment = value / (duration / speed);
-    delay = parseInt(elem.getAttribute('data-inc-delay')) || 0;
-    count = 0;
-    interval = setInterval(run, speed);
-  }.bind(this);
-}
 
 
-var elems = [
-  document.querySelector('li:nth-of-type(1) span'),
-  document.querySelector("#xx"),
-  document.querySelector('li:nth-of-type(3) input')
-];
-var objs = [];
+//email validation
 
-for (var i = 0, l = elems.length; i < l; i++) {
-  objs.push(
-    new Inc({
-      elem: elems[i],
-      speed: 50,
-      decimal: 2,
-
-    })
-  );
-}
-elems[0].addEventListener('click', function () {
-  objs[0].reset();
-});
-elems[1].addEventListener('click', function () {
-  objs[1].reset();
-});
-elems[2].addEventListener('click', function () {
-  objs[2].reset();
-});
 
 let email=document.getElementById("email");
-let full=document.getElementsByClassName("search-wrapper cf");
+let full=document.getElementById("search-wrapper")
 var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 var btn = document.getElementById('button-submit');
 
-email.addEventListener("input", (eo) => {
-
+email.addEventListener("input",(eo)=>{
+  
   if(email.value.match(pattern))
   {
-      full.style.border = "2px solid rgb(60, 234, 60)";
-
-
+    full.style.border="1px solid green";
+    btn.disabled=false;
+    btn.style.background="black";
+    
   }
-  else
+  else{
+    full.style.border="1px solid red";
+    btn.disabled=true;
+    btn.style.background="#666";
+  }
+  if(email.value=='')
   {
-      full.style.border = "2px solid red";
-
-  
-
+    full.style.border="none";
+    btn.disabled=true;
   }
+ 
+})
 
-}
-)
+// increasing numbers
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const c = +counter.innerText;
+
+    const increment = target / 200000;
+    console.log(increment);
+
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCounter();
+});

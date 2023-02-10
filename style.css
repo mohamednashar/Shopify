@@ -173,7 +173,7 @@ body {
     color: #0caf3f;
 }
 
-.search-wrapper {
+#search-wrapper {
     width: 500px;
     border-radius: 99999px;
     background: white;
@@ -184,7 +184,7 @@ body {
 
 /* Form text input */
 
-.search-wrapper input {
+#search-wrapper input {
     padding-left: 30px;
     width: 300px;
     border: 0;
@@ -196,7 +196,7 @@ body {
 
 }
 
-.search-wrapper input:focus {
+#search-wrapper input:focus {
     outline: 0;
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
@@ -205,19 +205,20 @@ body {
 
 
 /* Form submit button */
-.search-wrapper button {
+#search-wrapper button {
 
 
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: #fff;
-    background: #000000;
+    background: #666;
     border-radius: 9999px;
     border: none;
     font-size: 20px;
     padding: 15px 25px;
     margin: 10px;
+    transition: 0.3s all;
 
 }
 

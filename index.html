@@ -43,7 +43,7 @@
             <p>Pricing</p>
 
             <div class="dropdown_2">
-                <button onclick="myFunction()" class="dropbtn">Resources <i class="fa-solid fa-angle-down"></i></button>
+                <button class="dropbtn">Resources <i class="fa-solid fa-angle-down"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
@@ -66,9 +66,9 @@
             <h2>Build your business with Shopify to sell online, offline, and everywhere in between.</h2>
 
 
-            <div class="search-wrapper cf">
+            <div id="search-wrapper">
                 <input id="email" type="email" placeholder="Enter your email adress" required style="box-shadow: none">
-                <button id="button-submit" type="submit">Start free trial</button>
+                <button disabled="disabled" id="button-submit">Start free trial</button>
             </div>
             <p>Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive
                 marketing emails from Shopify.</p>
@@ -92,19 +92,19 @@
                     <p>net sales</p>
                     <li style="list-style-type: none;">
                         <div style="display: inline-block;">$</div>
-                        <span data-inc-value="1000000" data-inc-duration="500000" data-inc-delay="1000">0</span>
+                        <span class="counter" data-target="900000">
                     </li>
 
 
                     <div id="greenn">
-
+                        
                         <li st style="list-style-type: none;">
-
-                            <span id="xx" data-inc-value="100" data-inc-duration="40000" data-inc-delay="2000">0
+                            <div style="display: inline-block;"><i style="font-size: 10px;" class="fa-solid fa-arrow-up"></i></div>
+                            <span class="counter" data-target="100">0
 
                             </span>
 
-                            <div style="display: inline-block;">%</div>
+                            
                         </li>
 
                     </div>
@@ -586,7 +586,7 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-        <script src="/main.js"></script>
+        <script src="main.js"></script>
 
 </body>
 
