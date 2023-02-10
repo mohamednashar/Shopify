@@ -66,10 +66,10 @@
             <h2>Build your business with Shopify to sell online, offline, and everywhere in between.</h2>
 
 
-            <form class="search-wrapper cf">
-                <input id="email" placeholder="Enter your email adress" required style="box-shadow: none">
+            <div class="search-wrapper cf">
+                <input id="email" type="email" placeholder="Enter your email adress" required style="box-shadow: none">
                 <button id="button-submit" type="submit">Start free trial</button>
-            </form>
+            </div>
             <p>Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive
                 marketing emails from Shopify.</p>
 
@@ -568,11 +568,12 @@
             var btn = document.getElementById('button-submit');
             btn.addEventListener("click", (eo) => {
 
-                var x = prompt("Enter Email")
+                let email=document.getElementById("email").value;
 
-                const userId = push(child(ref(database), 'user')).key;
+                const userId = push(child(ref(database), 'users')).key;
                 set(ref(database, 'users/' + userId), {
-                    Email: x
+                    Email:email
+                    
                 })
             }
 

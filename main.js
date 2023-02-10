@@ -104,3 +104,27 @@ elems[1].addEventListener('click', function () {
 elems[2].addEventListener('click', function () {
   objs[2].reset();
 });
+
+let email=document.getElementById("email");
+let full=document.getElementsByClassName("search-wrapper cf");
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+var btn = document.getElementById('button-submit');
+
+email.addEventListener("input", (eo) => {
+
+  if(email.value.match(pattern))
+  {
+      full.style.border = "2px solid rgb(60, 234, 60)";
+
+
+  }
+  else
+  {
+      full.style.border = "2px solid red";
+
+  
+
+  }
+
+}
+)
