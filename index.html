@@ -1,0 +1,592 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--Icons Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animations Library-->
+    <title>Start and grow your e-commerce business</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="nav-bar"> <!--Navbar-->
+        <div id="left-nav">
+            <svg id="logo" style="width: 135px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608 173.7" role="img"
+                aria-label="Shopify">
+                <title>Shopify</title>
+                <path fill="#95BF47"
+                    d="M130.7 32.9c-.1-.9-.9-1.3-1.5-1.4-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8-2.9-.7-3.7-.5c0 0-1.9.6-5.1 1.6-.5-1.7-1.3-3.8-2.4-5.9-3.6-6.9-8.8-10.5-15.2-10.5-.4 0-.9 0-1.3.1-.2-.2-.4-.4-.6-.7-2.8-3-6.3-4.4-10.5-4.3-8.2.2-16.3 6.1-23 16.7-4.7 7.4-8.2 16.7-9.2 23.9-9.4 2.9-16 4.9-16.1 5-4.7 1.5-4.9 1.6-5.5 6.1C12.4 55.3 0 151.4 0 151.4l104.1 18 45.1-11.2S130.8 33.7 130.7 32.9zm-39.2-9.7c-2.4.7-5.1 1.6-8.1 2.5-.1-4.1-.6-9.9-2.5-14.9 6.3 1.2 9.3 8.2 10.6 12.4zM78 27.4c-5.5 1.7-11.4 3.5-17.4 5.4 1.7-6.4 4.9-12.8 8.8-17 1.5-1.6 3.5-3.3 5.9-4.3 2.3 4.7 2.7 11.4 2.7 15.9zM66.8 5.8c1.9 0 3.5.4 4.9 1.3-2.2 1.1-4.4 2.8-6.4 5-5.2 5.6-9.2 14.2-10.8 22.6-5 1.5-9.8 3-14.3 4.4 3-13.2 14-32.9 26.6-33.3z">
+                </path>
+                <path fill="#5E8E3E"
+                    d="M129.2 31.5c-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8c-.4-.4-.9-.6-1.4-.6v149.5l45.1-11.2S130.8 33.8 130.7 32.9c-.2-.9-.9-1.3-1.5-1.4z">
+                </path>
+                <path fill="#FFF"
+                    d="M79.1 54.7l-5.2 19.6s-5.8-2.7-12.8-2.2c-10.2.6-10.3 7-10.2 8.7.6 8.8 23.6 10.7 24.9 31.2 1 16.2-8.6 27.2-22.4 28.1-16.6 1-25.7-8.7-25.7-8.7l3.5-14.9s9.2 6.9 16.5 6.5c4.8-.3 6.5-4.2 6.3-7-.7-11.4-19.5-10.8-20.7-29.5-1-15.8 9.4-31.8 32.3-33.3 9-.8 13.5 1.5 13.5 1.5z">
+                </path>
+                <path
+                    d="M210.3 96.5c-5.2-2.8-7.9-5.2-7.9-8.5 0-4.2 3.7-6.9 9.6-6.9 6.8 0 12.8 2.8 12.8 2.8l4.8-14.6s-4.4-3.4-17.3-3.4c-18 0-30.5 10.3-30.5 24.8 0 8.2 5.8 14.5 13.6 19 6.3 3.6 8.5 6.1 8.5 9.9 0 3.9-3.1 7-9 7-8.7 0-16.9-4.5-16.9-4.5l-5.1 14.6s7.6 5.1 20.3 5.1c18.5 0 31.8-9.1 31.8-25.5.1-8.9-6.6-15.2-14.7-19.8zm73.8-30.8c-9.1 0-16.3 4.3-21.8 10.9l-.3-.1 7.9-41.4h-20.6l-20 105.3h20.6l6.9-36c2.7-13.6 9.7-22 16.3-22 4.6 0 6.4 3.1 6.4 7.6 0 2.8-.3 6.3-.9 9.1l-7.8 41.2h20.6l8.1-42.6c.9-4.5 1.5-9.9 1.5-13.4 0-11.5-6.2-18.6-16.9-18.6zm63.5 0c-24.8 0-41.2 22.4-41.2 47.4 0 16 9.9 28.8 28.4 28.8 24.3 0 40.8-21.8 40.8-47.4-.1-14.7-8.8-28.8-28-28.8zm-10.2 60.4c-7 0-10-6-10-13.4 0-11.8 6.1-31.1 17.3-31.1 7.3 0 9.7 6.3 9.7 12.4 0 12.7-6.1 32.1-17 32.1zm90.8-60.4c-13.9 0-21.8 12.2-21.8 12.2h-.3l1.2-11.1h-18.2c-.9 7.5-2.5 18.8-4.2 27.3l-14.3 75.4h20.6l5.7-30.5h.4s4.2 2.7 12.1 2.7c24.2 0 40-24.8 40-49.9.1-13.7-6.1-26.1-21.2-26.1zm-19.7 60.7c-5.4 0-8.5-3-8.5-3l3.4-19.3c2.4-12.8 9.1-21.4 16.3-21.4 6.3 0 8.2 5.8 8.2 11.4 0 13.3-7.9 32.3-19.4 32.3zm70.4-90.2c-6.6 0-11.8 5.2-11.8 12 0 6.1 3.9 10.3 9.7 10.3h.3c6.4 0 12-4.3 12.1-12 0-6-4-10.3-10.3-10.3zm-28.8 104.2h20.6l14-73h-20.8zm87-73.2h-14.3l.7-3.4c1.2-7 5.4-13.3 12.2-13.3 3.7 0 6.6 1 6.6 1l4-16.1s-3.6-1.8-11.2-1.8c-7.3 0-14.6 2.1-20.2 6.9-7 6-10.3 14.6-12 23.3l-.6 3.4h-9.6l-3 15.5h9.6l-10.9 57.7H509l10.9-57.7h14.2l3-15.5zm49.6.2s-12.9 32.5-18.7 50.2h-.3c-.4-5.7-5.1-50.2-5.1-50.2H541l12.4 67.1c.3 1.5.1 2.4-.4 3.4-2.4 4.6-6.4 9.1-11.2 12.4-3.9 2.8-8.2 4.6-11.7 5.8l5.7 17.5c4.2-.9 12.8-4.3 20.2-11.2 9.4-8.8 18.1-22.4 27-40.9l25.2-54.1h-21.5z">
+                </path>
+            </svg>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Solutions <i class="fa-solid fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <p>Pricing</p>
+
+            <div class="dropdown_2">
+                <button onclick="myFunction()" class="dropbtn">Resources <i class="fa-solid fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="right-nav">
+            <p>Log in</p>
+            <button>Start free trial</button>
+
+        </div>
+    </div>
+
+    <div id="cyan"> <!--First Section-->
+        <div id="left-cyan">
+            <button id="btnn"><i class="fa-solid fa-caret-right"></i> Watch a 2 min Shopify overview</button>
+            <h1>The global commerce platform</h1>
+            <h2>Build your business with Shopify to sell online, offline, and everywhere in between.</h2>
+
+
+            <form class="search-wrapper cf">
+                <input id="email" placeholder="Enter your email adress" required style="box-shadow: none">
+                <button id="button-submit" type="submit">Start free trial</button>
+            </form>
+            <p>Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive
+                marketing emails from Shopify.</p>
+
+            <div id="right-cyan">
+                <div id="right-1">
+
+
+                </div>
+                <div id="right-2">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="right-cyan">
+            <div id="right-1">
+                <img src="images/hero2-small.webp" alt="">
+                <div id="net-sales">
+                    <p>net sales</p>
+                    <li style="list-style-type: none;">
+                        <div style="display: inline-block;">$</div>
+                        <span data-inc-value="1000000" data-inc-duration="500000" data-inc-delay="1000">0</span>
+                    </li>
+
+
+                    <div id="greenn">
+
+                        <li st style="list-style-type: none;">
+
+                            <span id="xx" data-inc-value="100" data-inc-duration="40000" data-inc-delay="2000">0
+
+                            </span>
+
+                            <div style="display: inline-block;">%</div>
+                        </li>
+
+                    </div>
+
+
+                </div>
+                <img src="images/hero5-smal.webp" alt="">
+
+
+            </div>
+            <div id="right-2">
+                <img src="images/hero4-smal.webp" alt="">
+                <img style="border-radius: 15px;" src="images/hero1-small.webp" alt="">
+                <img src="images/hero6.webp" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="earth"> <!--Earth Section-->
+        <div id="earth-left">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure2/production/_assets/northAmerica-U4GGUXVN.png"
+                alt="">
+
+        </div>
+        <div id="earth-right">
+            <h1>Discover why millions of entrepreneurs chose Shopify to build their business — </h1>
+            <div id="coloredh1">
+                <h1>from hello world to IPO.</h1>
+            </div>
+
+            <div id="grids">
+                <div id="grid-1">
+                    <h2>Millions</h2>
+                    <p>of merchants worldwide</p>
+                </div>
+                <div id="grid-2">
+                    <h2 id="170">170+</h2>
+                    <p>countries represented</p>
+                </div>
+                <div id="grid-3">
+                    <h2>10%</h2>
+                    <p>of total US ecommerce</p>
+                </div>
+                <div id="grid-4">
+                    <div id="supp"><sup>$</sup>444b+ <sup class="currency">USD</sup></div>
+                    <p>global economic activity</p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="squares"> <!--Squares Section (Under Earth)-->
+
+        <div id="square-1">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/creators-bea49bb4984ee33a25150a9908bd7e701781c56443b83b785060cd8e6b9bc219.svg"
+                alt="">
+            <h2>Creators</h2>
+            <p>Turn followers into customers with commerce tools for creators</p>
+        </div>
+        <div id="square-2">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/dev-82bdbe630a35ca679000d2177f4e32d44b5455e906f0a7ff628c3eadbee38c8e.svg"
+                alt="">
+            <h2>Developers</h2>
+            <p>Build the future of commerce with Shopify's powerful API</p>
+        </div>
+        <div id="square-3">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/partners-d453b53d9ff10a630080d24563478935f3d1b10de8eb15bef9f13fe58be3f8de.svg"
+                alt="">
+            <h2>Partners</h2>
+            <p>Offer your expertise to Shopify merchants all over the world</p>
+        </div>
+        <div id="square-4">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/infinity-ea665cc8ef4b2379465495ba43cd5cdbba88cd70dd51c6fa59aec331fd2336be.svg"
+                alt="">
+            <h2>Plus</h2>
+            <p>A commerce solution for growing digital brands.</p>
+        </div>
+
+        <div id="square-5">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/layers-75e27771a1461d41eeea6d3776873fcf0dca705afb334adadb0c7dc0a20b0404.svg"
+                alt="">
+            <h2>Enterprise</h2>
+            <p>The modern, composable stack for enterprise retail.</p>
+        </div>
+    </div>
+
+    <div id="video-1"> <!--First Video Section-->
+        <p id="blue-p">BUILD AN ONLINE STORE</p>
+        <h1>Your store, your way</h1>
+        <video width="1340" height="577" autoplay muted loop>
+            <source id="vid" src="videos/1.mp4" type="video/mp4">
+        </video>
+        <div id="text">
+            <div id="text-1">
+                <div class="progress-bar" style="--width: 0" data-label=""></div>
+                <h3>Build an online storefront</h3>
+                <p>Bring your vision to life with our drag-and-drop store creator. No coding expertise required — just
+                    your next big idea.</p>
+
+            </div>
+            <div id="text-2">
+                <div class="progress-bar" style="--width: 0" data-label=""></div>
+                <h3>Craft the brand you want</h3>
+                <p>Select from customizable templates created by a community of world-class designers.</p>
+
+            </div>
+            <div id="text-3">
+                <div class="progress-bar" style="--width: 0" data-label=""></div>
+                <h3>Level up with apps</h3>
+                <p>Add more features and functionality to your online store with apps built by trusted Shopify
+                    developers.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="pics"> <!--3 Pics Section-->
+        <p id="blue-p">SALES CHANNELS</p>
+        <div id="first-section">
+            <div id="h1-div">
+                <h1>Sell to every buyer, everywhere</h1>
+            </div>
+
+            <div id="p-div">
+                <p>Sell online, in person, and around the world with the marketing tools, social integrations, and sales
+                    channels you need to get <br> your products in front of customers.</p>
+                <div id="under">
+                    <h2>Start selling</h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="second-section">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/sell-buyer-large-37ef6b862e53584054039ff594f868d60f1804c08624b462c4f4d679e7155c71.webp"
+                alt="">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/marketing2-large-11a96ec4b8f603824a9f489b164510137d62ec4035577593d68c787159c9a5e2.png"
+                alt="">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/marketing3-large-45a05b52b6219582fe516c4fdea4dfe6aa7107b7dd07b1e91e49bcf35fb85fc7.png"
+                alt="">
+        </div>
+
+        <div id="vid-text">
+            <div id="video-small">
+                <video width="660" height="660" autoplay muted loop>
+                    <source src="videos/4.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div id="videotxt">
+                <h3 id="blue-p">FAST, RELIABLE CHECKOUT</h3>
+                <h1>The best-converting checkout on the planet</h1>
+                <p>Back your business with Shop Pay—the one-click <br> checkout that's built to convert.</p>
+                <div id="under">
+                    <h2>Seize every sale</h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="third-section">
+            <div id="videotxt">
+                <h3 id="blue-p">POINT OF SALE</h3>
+                <h1>Flexible point of sale to <br> power your retail store</h1>
+                <p>A POS system that allows customers to shop their way, <br> from online to checkout line.</p>
+
+                <div id="under">
+                    <h2>Meet Shopify POS</h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <img style="width:660px;height: 575px;"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/pos-2-large-50a3a20f09c7d1fef32dd3c6fdcfc75db43bc06e980cd317d08acbba64ae9a7b.webp"
+                alt="">
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div id="columns"> <!--Built In -->
+        <p id="blue-p">BUILT-IN MARKETING TOOLS</p>
+        <div id="first-column">
+
+            <h1 id="first-touch">From first touch to <br> full funnel</h1>
+            <div id="under">
+                <h2>Leverage our full marketing suite</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div id="columns-grid-flex">
+            <div id="columns-grid">
+                <div id="column-1">
+                    <h1>Reach new leads</h1>
+                    <p>Find new shoppers with the SEO, social media, and content marketing tools that help you reach
+                        customers
+                        where they are.</p>
+
+                </div>
+                <div id="column-2">
+                    <h1>Engage with customers</h1>
+                    <p>Build custom email campaigns, set automations to serve every segment, and connect with customers
+                        on the
+                        go with integrated messaging tools.</p>
+
+                </div>
+                <div id="column-3">
+                    <h1>Data you can build on</h1>
+                    <p>Take control of your customer data to build custom audiences and explore the customer insights
+                        that drive
+                        ongoing growth.</p>
+
+
+                </div>
+
+            </div>
+            <video width="660" height="660" autoplay muted loop>
+                <source src="videos/7.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div id="column-2-text"> <!--Built In Text Section-->
+        <p id="blue-p">CENTRALIZED BUSINESS OPERATIONS</p>
+
+        <h1>Streamline your <br> back office</h1>
+    </div>
+
+
+    <div id="columns-grid-flex-2">
+        <video width="660" height="660" autoplay muted loop>
+            <source src="videos/8.mp4" type="video/mp4">
+        </video>
+        <div id="columns-grid">
+            <div id="column-1">
+                <h1>Oversee your operations</h1>
+                <p>Manage inventory, track payments, and view real-time business <br> insights — all in one place, so
+                    you can
+                    focus on building your <br> business.</p>
+
+            </div>
+            <div id="column-2">
+                <h1>Fulfill every order</h1>
+                <p>Get your products where they need to be with integrated inventory management, streamlined returns,
+                    and a dedicated shipping and <br> fulfillment network.</p>
+
+            </div>
+            <div id="column-3">
+                <h1>Manage your money where you make it</h1>
+                <p>Manage your business finances all from one place with money management and flexible funding designed
+                    with entrepreneurs in <br> mind.</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="black"> <!--Black Section-->
+        <div id="black-text">
+            <p>SHOPIFY SUPPORT</p>
+            <h1>The help you need, <br> when you need it</h1>
+
+        </div>
+
+
+        <div id="black-squares">
+            <div id="black-1">
+                <i id="ii" class="fa-regular fa-rectangle-list"></i>
+                <h3>Blog</h3>
+                <p>Get all the marketing and business strategy tips you <br> need to help you run an online business.
+                </p>
+                <button>Read <i id="iii" class="fa-solid fa-chevron-right"></i></button>
+
+            </div>
+            <div id="black-2">
+                <i id="ii" class="fa-regular fa-file"></i>
+                <h3>Online Courses</h3>
+                <p>Learn tried-and-tested business tips with instant <br> access to lessons from successful
+                    entrepreneurs.</p>
+                <button>Learn <i id="iii" class="fa-solid fa-chevron-right"></i></button>
+
+            </div>
+            <div id="black-3">
+                <i id="ii" class="fa-regular fa-user"></i>
+                <h3>Community</h3>
+                <p>Connect with a community of brands, partners, and <br> fellow merchants who understand Shopify.</p>
+                <button>Discuss <i id="iii" class="fa-solid fa-chevron-right"></i></button>
+
+            </div>
+            <div id="black-4">
+                <i id="ii" class="fa-regular fa-circle-question"></i>
+                <h3>Help Center</h3>
+                <p>Find answers with a dedicated helpdesk resource full <br> of articles and videos from our Support
+                    team.</p>
+                <button>Get help <i id="iii" class="fa-solid fa-chevron-right"></i></button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="green"> <!--Green Section-->
+        <h1>Grow your <br> business here</h1>
+        <p>Whether you want to sell products down the street or around <br>the world, we have all the tools you need.
+        </p>
+        <button>Start free trial</button>
+
+    </div>
+
+    <div id="footer"> <!--Footer-->
+
+        <div id="first-tables">
+            <svg id="svgg" aria-labelledby="shopifyLogoTitle" fill="none" role="img" viewBox="0 0 56 64"
+                xmlns="http://www.w3.org/2000/svg" class="h-[44px]" height="64">
+                <title id="shopifyLogoTitle">Shopify Logo</title>
+                <g clip-path="url(#clip0_198_267)">
+                    <path
+                        d="M37.7102 7.42882C37.7102 7.42882 37.0044 7.6296 35.8448 7.98098C35.6432 7.32843 35.3407 6.57549 34.9374 5.77235C33.6266 3.26255 31.6604 1.90725 29.3414 1.90725C29.1901 1.90725 29.0389 1.90725 28.8372 1.95745C28.7868 1.85706 28.686 1.80686 28.6356 1.70647C27.6273 0.602155 26.3165 0.100194 24.7537 0.15039C21.7288 0.250783 18.7039 2.40921 16.284 6.27431C14.5699 8.9849 13.2591 12.3982 12.9062 15.0586C9.42764 16.1127 7.00774 16.8657 6.95733 16.9159C5.19282 17.468 5.1424 17.5182 4.94075 19.1747C4.7895 20.4296 0.151367 55.7676 0.151367 55.7676L38.2647 62.3433V7.37862C37.9623 7.37862 37.811 7.42882 37.7102 7.42882ZM28.8876 10.1394C26.8711 10.7418 24.6528 11.4445 22.485 12.0971C23.09 9.73784 24.2999 7.37862 25.7115 5.82255C26.2661 5.27039 27.0223 4.61784 27.8794 4.21627C28.7364 6.02333 28.9381 8.48294 28.8876 10.1394ZM24.7537 2.20843C25.4595 2.20843 26.0644 2.35902 26.5686 2.66019C25.7619 3.06176 24.9553 3.71431 24.1991 4.46725C22.2833 6.52529 20.8213 9.73784 20.2163 12.7998C18.4014 13.352 16.5865 13.9041 14.9228 14.4061C16.0319 9.58725 20.1155 2.30882 24.7537 2.20843ZM18.9056 29.8163C19.1072 33.0288 27.6273 33.7316 28.1314 41.3112C28.4843 47.2845 24.9553 51.3504 19.8634 51.6516C13.7129 52.0531 10.3351 48.439 10.3351 48.439L11.6459 42.9174C11.6459 42.9174 15.0237 45.4774 17.746 45.2767C19.5105 45.1763 20.1659 43.7206 20.1155 42.7167C19.8634 38.5002 12.9062 38.7512 12.4525 31.8241C12.0492 26.0014 15.8807 20.1284 24.3503 19.5763C27.6273 19.3755 29.291 20.1786 29.291 20.1786L27.3752 27.4069C27.3752 27.4069 25.2074 26.4029 22.6362 26.6037C18.9056 26.8547 18.8552 29.2139 18.9056 29.8163ZM30.9042 9.53706C30.9042 8.03117 30.7026 5.87274 29.9968 4.06568C32.3158 4.51745 33.4249 7.07745 33.9291 8.63353C33.0216 8.88451 32.0133 9.18568 30.9042 9.53706Z"
+                        fill="white"></path>
+                    <path
+                        d="M39.4238 62.2429L55.254 58.3276C55.254 58.3276 48.448 12.4986 48.3976 12.1974C48.3472 11.8963 48.0951 11.6955 47.8431 11.6955C47.591 11.6955 43.1545 11.5951 43.1545 11.5951C43.1545 11.5951 40.4321 8.98488 39.4238 7.98096V62.2429Z"
+                        fill="white"></path>
+                    <path
+                        d="M29.2498 20.2129L27.3148 27.4286C27.3148 27.4286 25.1548 26.4426 22.5898 26.6218C18.8098 26.8459 18.8098 29.2213 18.8098 29.8039C19.0348 33.0308 27.5398 33.7479 28.0348 41.3221C28.3948 47.2829 24.8848 51.3613 19.7548 51.6751C13.6348 51.9888 10.2598 48.4034 10.2598 48.4034L11.5648 42.8907C11.5648 42.8907 14.9848 45.4454 17.6848 45.2661C19.4398 45.1765 20.1148 43.6975 20.0248 42.7115C19.7548 38.4986 12.8248 38.7675 12.3748 31.8207C12.0148 25.9944 15.8398 20.1232 24.2998 19.5854C27.5848 19.3613 29.2498 20.2129 29.2498 20.2129Z"
+                        fill="black"></path>
+                </g>
+                <defs>
+                    <clipPath id="clip0_198_267">
+                        <rect width="225" height="64" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+            <ul>
+                <h3>shopify</h3>
+                <li>About Shopify</li>
+                <li>Careers</li>
+                <li>Investors</li>
+                <li>Press and Media</li>
+                <li>Affiliates</li>
+                <li>Legal</li>
+                <li>Service status</li>
+            </ul>
+            <ul>
+                <h3>Support</h3>
+                <li>Merchant Support</li>
+                <li>Help center</li>
+                <li>Hire and Expert</li>
+                <li>Shopify Community</li>
+                <li>Shopify Events</li>
+            </ul>
+            <ul>
+                <h3>Developers</h3>
+                <li>Shopify.dev</li>
+                <li>API documentation</li>
+                <li>Dev Degree</li>
+            </ul>
+            <ul>
+                <h3>Products</h3>
+                <li>Shop</li>
+                <li>Shop Pay</li>
+                <li>Shopify Plus</li>
+                <li>Shopify Fulfillment Network </li>
+                <li>Linkpop</li>
+                <li>Hydrogen and Oxygen</li>
+                <li>Commerce Components</li>
+            </ul>
+        </div>
+
+        <div id="second-tables">
+
+            <ul>
+                <h3>Global Impact</h3>
+                <li>Sustainability</li>
+                <li>Social impact</li>
+                <li>Build Black</li>
+                <li>Build Native</li>
+                <li>Research</li>
+            </ul>
+            <ul>
+                <h3>Solutions</h3>
+                <li>Online store builder</li>
+                <li>Website builder</li>
+                <li>Ecommerce website</li>
+            </ul>
+        </div>
+        <div id="white-line"></div>
+        <div id="final">
+            <div id="left-final">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Sitemap</p>
+            </div>
+            <div id="right-final">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <ul>
+
+
+        <script type="module">      //sending Email To Firebase
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js";
+            import { getDatabase, set, ref, push, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-database.js";
+            const firebaseConfig = {
+
+                apiKey: "AIzaSyBCAQ8ccKya7HpVpavq6YiCKy2KOyL4MPk",
+
+                authDomain: "elmawkaa-9b315.firebaseapp.com",
+
+                databaseURL: "https://elmawkaa-9b315-default-rtdb.firebaseio.com",
+
+                projectId: "elmawkaa-9b315",
+
+                storageBucket: "elmawkaa-9b315.appspot.com",
+
+                messagingSenderId: "1053018111721",
+
+                appId: "1:1053018111721:web:5d3884204d80a088b6fa78"
+
+            };
+
+
+
+            const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
+
+            var btn = document.getElementById('button-submit');
+            btn.addEventListener("click", (eo) => {
+
+                var x = prompt("Enter Email")
+
+                const userId = push(child(ref(database), 'user')).key;
+                set(ref(database, 'users/' + userId), {
+                    Email: x
+                })
+            }
+
+            )
+
+
+
+        </script>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script src="/main.js"></script>
+
+</body>
+
+</html>
