@@ -67,6 +67,7 @@ let email=document.getElementById("email");
 let full=document.getElementById("search-wrapper")
 var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 var btn = document.getElementById('button-submit');
+var flg=0;
 
 email.addEventListener("input",(eo)=>{
   
@@ -75,6 +76,7 @@ email.addEventListener("input",(eo)=>{
     full.style.border="1px solid green";
     btn.disabled=false;
     btn.style.background="black";
+    flg=1
     
   }
   else{
