@@ -90,6 +90,15 @@ email.addEventListener("input",(eo)=>{
  
 })
 
+btn.addEventListener("click",(eo)=>{
+  
+
+  if(btn.disabled=true){
+    alert("Email Submitted Successfully");
+  }
+ 
+})
+
 // increasing numbers
 
 const counters = document.querySelectorAll(".counter");
