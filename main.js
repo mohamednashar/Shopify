@@ -77,6 +77,7 @@ email.addEventListener("input",(eo)=>{
     btn.disabled=false;
     btn.style.background="black";
     flg=1;
+    document.getElementById("hide").style.display="block";
     
   }
   else{
@@ -84,12 +85,14 @@ email.addEventListener("input",(eo)=>{
     btn.disabled=true;
     btn.style.background="#666";
     flg=0;
+    document.getElementById("hide").style.display="none";
   }
   if(email.value=='')
   {
     full.style.border="none";
     btn.disabled=true;
     flg=0;
+    document.getElementById("hide").style.display="none";
   }
  
 })
@@ -99,6 +102,7 @@ btn.addEventListener("click",(eo)=>{
 
   if(flg){
     alert("Email Submitted Successfully");
+    document.getElementById("hide").style.display="block";
   }
  
 })
