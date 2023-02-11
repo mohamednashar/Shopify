@@ -76,18 +76,20 @@ email.addEventListener("input",(eo)=>{
     full.style.border="1px solid green";
     btn.disabled=false;
     btn.style.background="black";
-    flg=1
+    flg=1;
     
   }
   else{
     full.style.border="1px solid red";
     btn.disabled=true;
     btn.style.background="#666";
+    flg=0;
   }
   if(email.value=='')
   {
     full.style.border="none";
     btn.disabled=true;
+    flg=0;
   }
  
 })
@@ -95,7 +97,7 @@ email.addEventListener("input",(eo)=>{
 btn.addEventListener("click",(eo)=>{
   
 
-  if(btn.disabled=true){
+  if(flg){
     alert("Email Submitted Successfully");
   }
  
